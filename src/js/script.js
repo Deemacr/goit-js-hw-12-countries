@@ -7,6 +7,9 @@ import toastr from './toastr.js'
 refs.searchBox.addEventListener('input', (event) => {
 	refs.wrapper.innerHTML = '<ul class="countries-list"></ul>';
 	const inputValue = event.currentTarget.value;
+	if (!inputValue) {
+		return;
+	}
 	debouncedRes(inputValue);
 })
 
