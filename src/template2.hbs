@@ -1,0 +1,11 @@
+<div class="country-name "><span class="bold-word"> {{name}}</span></div>
+<div class="country-container flex flex-horizontal-center">
+	<div class="country-info">
+		<p class="capital-name"><span class="bold-word">Capital: </span>{{capital}}</p>
+		<p class="country-population"><span class="bold-word">Population: </span>{{population}}</p>
+		<span class="bold-word">Languages:</span>
+		<ul class="country-languages">{{#each languages}}<li>{{this.name}}</li>
+			{{/each}}</ul>
+	</div>
+	<img src="{{flag}}" alt="{{name}}" class="country-flag">
+</div>
